@@ -143,16 +143,11 @@ public class login extends javax.swing.JFrame {
         String password = new String(jPasswordField1.getPassword());
 
         if (username.isEmpty() || password.isEmpty()) {
-            // Menampilkan pesan jika username atau password kosong
-            // Sesuaikan dengan label atau komponen yang sesuai di formulir Anda
-            JOptionPane.showMessageDialog(this, "Silahkan isi semua kolom.");
+            JOptionPane.showMessageDialog(this, "Silahkan isi form login!.");
         } else {
             if (checkUserCredentials(username, password)) {
-                // Menampilkan pesan jika login berhasil
                 JOptionPane.showMessageDialog(this, "Login berhasil!");
-                // Lakukan aksi setelah login sukses
             } else {
-                // Menampilkan pesan jika data yang dimasukkan tidak terdaftar
                 JOptionPane.showMessageDialog(this, "Data yang dimasukkan tidak terdaftar.");
             }
         }
