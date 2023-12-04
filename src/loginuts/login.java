@@ -154,8 +154,8 @@ public class login extends javax.swing.JFrame {
     }
     private boolean checkUserCredentials(String username, String password) {
         String url = "jdbc:mysql://localhost:3306/loginuts";
-        String user = "username";
-        String pass = "password";
+        String user = "root";
+        String pass = "";
 
         try {
             Connection connection = DriverManager.getConnection(url, user, pass);
